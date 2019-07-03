@@ -1,0 +1,197 @@
+/*
+ * Created by SharpDevelop.
+ * User: kaioc
+ * Date: 02/07/2019
+ * Time: 19:33
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Threading;
+
+namespace YOUTUBE_FECIP
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+		    double pointy = 0;
+		perg1y:
+			Console.Clear();
+			Thread.Sleep(100);
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("1): Qual o maior canal do youtube atualmente?");
+			Console.ForegroundColor = ConsoleColor.Red;
+			Thread.Sleep(900);
+			Console.WriteLine("A) Felipe Neto");
+			Thread.Sleep(900);
+			Console.WriteLine("B) PewDiePie");
+			Thread.Sleep(900);
+			Console.WriteLine("C) T-Series");
+			Thread.Sleep(900);
+			Console.WriteLine("D) Kondizila");
+			string resy1 = Console.ReadLine();
+			
+			if (resy1 !="a" && resy1 !="b" && resy1 !="c" && resy1 !="d" ){
+				Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+				Console.ReadKey(true);
+				goto perg1y;
+			}
+			
+			
+			if (resy1 =="c"){
+				Console.WriteLine("Parabéns, você acertou!");
+				Console.WriteLine("Pressione algo para ir para a próxima questão");
+				pointy = pointy+1;
+				Console.ReadKey(true);
+				goto perg2y;
+			}
+			else{
+				Console.WriteLine("Resposta incorreta");
+				Console.ReadKey(true);
+				goto perg2y;
+			}
+		
+
+
+
+			
+		perg2y:
+			Console.Clear();
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+			Thread.Sleep(100);
+			Console.WriteLine("2) Qual o maior canal do Brasil? ");
+			Console.ForegroundColor = ConsoleColor.Red;
+			Thread.Sleep(900);
+			Console.WriteLine("A) Felipe neto");
+			Thread.Sleep(900);
+			Console.WriteLine("B) Whindersson Nunes");
+			Thread.Sleep(900);
+			Console.WriteLine("C) Kéfera");
+			Thread.Sleep(900);
+			Console.WriteLine("D) Kondizila");
+			string resy2 = Console.ReadLine();
+			
+			if (resy2 !="a" && resy2 !="b" && resy2 !="c" && resy2 !="d" ){
+				Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+				Console.ReadKey(true);
+				goto perg2y;
+			}
+			
+			
+			if (resy2 =="d"){
+				Console.WriteLine("Parabéns, você acertou!");
+				Console.WriteLine("Pressione algo para ir para a próxima questão");
+				pointy = pointy+1;
+				Console.ReadKey(true);
+				goto perg3y;
+			}
+			else{
+				Console.WriteLine("Resposta incorreta");
+				Console.ReadKey(true);
+				goto perg3y;
+			}
+			
+		perg3y:
+			Console.Clear();
+			Console.ForegroundColor = ConsoleColor.Green;
+			Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+			Thread.Sleep(100);
+			Console.WriteLine("3) O canal: Você Sabia, um dos maiores canais brasileiros, é formado por quem?");
+			Console.ForegroundColor=ConsoleColor.Red;
+			Thread.Sleep(900);
+			Console.WriteLine("A) Daniel Molo e Lukas Marques");
+			Thread.Sleep(900);
+			Console.WriteLine("B) Davi figueireido e Lucas Molo");
+			Thread.Sleep(900);
+			Console.WriteLine("C) Lucas e Gabriel Rodrigues");
+			Thread.Sleep(900);
+			Console.WriteLine("D) Daniel Marques e Lukas ART");
+			string resy3 = Console.ReadLine();
+			
+			if (resy3 !="a" && resy3 !="b" && resy3 !="c" && resy3 !="d" ){
+				Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+				Console.ReadKey(true);
+				goto perg3y;
+			}
+			
+			
+			if (resy3 =="a"){
+				Console.WriteLine("Parabéns, você acertou!");
+				Console.WriteLine("Pressione algo para ir para a próxima questão");
+				pointy = pointy+1;
+				Console.ReadKey(true);
+				goto perg4y;
+			}
+			else{
+				Console.WriteLine("Resposta incorreta");
+				Console.ReadKey(true);
+				goto perg4y;
+			}
+			
+		perg4y:
+			Console.Clear();
+			Console.ForegroundColor=ConsoleColor.Green;
+			Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+			Thread.Sleep(100);
+			Console.WriteLine("4) No dia 23 de Abril de 2005 foi postado o primero vídeo do youtube, como era o vídeo?");
+			Console.ForegroundColor=ConsoleColor.Red;
+			Thread.Sleep(900);
+			Console.WriteLine("A) Um passeio em uma montanha russa dos Estados Unidos, postado por um dos criadores do site e intitulado 'Radical Day'");
+			Thread.Sleep(900);
+			Console.WriteLine("B) Um passeio no zoológico feito pelo jovem Yakov Laptsky no jardim zoológico de San Diego e postado por Jawed Karin, um dos criadores do youtube");
+			Thread.Sleep(900);
+			Console.WriteLine("C) Uma gameplay de Dragon Ball Z: Budokai 3 e upado por Mickey Whazalski, o primeiro youtuber do mundo");
+			Thread.Sleep(900);
+			Console.WriteLine("D) Um documentário sobre a segunda guerra mundial");
+			string resy4 = Console.ReadLine();
+			
+			if (resy4 !="a" && resy4 !="b" && resy4 !="c" && resy4 !="d" ){
+				Console.WriteLine("Resposta inválida, por favor digite apenas alguma das alternativas dadas");
+				Console.ReadKey(true);
+				goto perg4y;
+			}
+			
+			
+			if (resy4 =="b"){
+				Console.WriteLine("Parabéns, você acertou!");
+				Console.WriteLine("Pressione algo para ir para a próxima questão");
+				pointy = pointy+1;
+				Console.ReadKey(true);
+				goto perg4y;
+			}
+			else{
+				Console.WriteLine("Resposta incorreta");
+				Console.ReadKey(true);
+				goto perg5y;
+			}
+			
+		perg5y:
+			Console.Clear();
+			Console.ForegroundColor=ConsoleColor.Green;
+			Console.WriteLine("Sua pontuação atual é:{0}", pointy);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
